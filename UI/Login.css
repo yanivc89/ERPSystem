@@ -40,7 +40,7 @@ tab1 { padding-left: 2em; }
 .container{
     
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(image/ERP_Main_Screen.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(ERP_Main_Screen.jpg);
     background-position: center;
     background-size: cover;
 }

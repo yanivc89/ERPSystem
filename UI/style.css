@@ -59,7 +59,7 @@ html {
 .leftBox {
         float: left;
         width: 15%;
-        height: 614px;
+        height: 814px;
         background: #F8F7F7;
         border: solid 2px #D8D8D8;
         border-top: none;
@@ -114,24 +114,24 @@ li a:active {
 .lastButtons{
     
         float: left;
-        width: 40%;
+        width: 70%;
         margin-top: 30px;
         margin-left: 100px;
     
 }
 
-#save, #cancel {
+#save, #cancel,#search,#reset,#Add {
         width: 69px;
         height: 28px;    
 }
 
-#save {
+#save,#search,#Add {
         background-color: #d30505;
         color: #FFFFFF;
         border: #ac0202;       
 }
 
-#save:active {
+#save:active,#search:active,#Add:active {
         background-color: #810606;
         color: #FFFFFF;
         border: #ac0202;       
@@ -171,7 +171,9 @@ label {
     color:    #b2b2b2;
 }
 
-
+input {
+    height: 25px;
+}
 
 /*******************(1) ADD_PRODUCTS **************************/
 
@@ -210,4 +212,38 @@ label {
 /*******************(3) ADD_USERS **************************/
 .usrType{
         width: 25%;
+}
+
+/*******************(4)GENERATE_BILL ************************/
+
+.bodyDetails {
+        width: 70%;
+        float: left;
+        margin-left: 100px;
+        line-height: 50px; 
+}
+.topLeft, .topRight,.bottomLeft,.bottomRight{
+    float: left;
+    display: inline-block;
+    width: 50%;
+}
+
+.vatField1{
+    width: 10%;
+}
+
+.vatField2{
+    width: 18%;
+}
+
+/*******************(4)View_BILL ************************/
+
+.bottom{
+ text-align: right;
+    width: 83%;
+}
+
+.buttonsRight{
+    padding-left: 44%;
+    
 }
