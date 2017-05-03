@@ -1,0 +1,213 @@
+/* ------------------------------------------------------------------------------------ */
+/* BASIC SETUP */
+/* ------------------------------------------------------------------------------------ */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+        background-color: #fff;
+        color: #555;
+        font-family: 'Lato','Arial',sans-serif; 
+        font-weight: 300;
+        font-size: 20px;
+        text-rendering: optimizeLegibility; 
+}
+
+.clearfix { zoom:1}
+.clearfix:after {
+        content: '.';
+        clear: both;
+        display: block;
+        height: 0;
+        visibility: hidden;
+}
+
+
+.row {
+        margin: 0 auto; 
+        width: auto;
+}
+
+
+
+/* ------------------------------------------------------------------------------------ */
+/* REUSABLE CODE */
+/* ------------------------------------------------------------------------------------ */
+
+
+/**************TOP BOX****************/
+.topBox {
+        width:auto;
+        height: 68px;
+        opacity: 100%;
+        border: solid 2px #D8D8D8;
+        background: #F8F7F7;   
+    }
+
+.headText {
+        font-size: 20px;
+        text-align: right;
+        margin: 25px;   
+    }
+
+/**************LEFT BOX****************/
+
+.leftBox {
+        float: left;
+        width: 15%;
+        height: 614px;
+        background: #F8F7F7;
+        border: solid 2px #D8D8D8;
+        border-top: none;
+    }
+
+.leftBox li a {
+        font-size: 14px;
+        margin: 1px;
+    
+}
+ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    
+}
+
+li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    
+}
+
+li a:hover {
+        border: solid 2px #268CDC;
+        background-color: #268CDC;
+}
+    
+li a:active {
+        background-color: #268CDC;
+        color: white;
+}
+
+
+
+/**************TOP LINE****************/
+
+.line {
+        float: left;
+        width: 80%;
+        height: 45px;
+        border-bottom: 1px solid black;
+        margin: 20px;
+        font-size: 25px;
+    }
+
+/*************** LAST BUTTON (SAVE AND CANCEL)***************/
+
+.lastButtons{
+    
+        float: left;
+        width: 40%;
+        margin-top: 30px;
+        margin-left: 100px;
+    
+}
+
+#save, #cancel {
+        width: 69px;
+        height: 28px;    
+}
+
+#save {
+        background-color: #d30505;
+        color: #FFFFFF;
+        border: #ac0202;       
+}
+
+#save:active {
+        background-color: #810606;
+        color: #FFFFFF;
+        border: #ac0202;       
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------ */
+/* CODE FOR BODY DETAILS */
+/* ------------------------------------------------------------------------------------ */
+
+/*************** GLOBAL/COMMON CODE FOR BODY***************/
+.details {
+        width: 40%;
+        float: left;
+        margin-left: 100px;
+        line-height: 50px; 
+}
+
+tab1 { 
+        padding-left: 2em;
+}
+
+label {
+        display: inline-block;
+        width: 30%;
+        font-size: 16px;
+}
+
+.valueFields{
+        width: 30%;
+}
+
+::-webkit-input-placeholder { 
+    color:    #b2b2b2;
+}
+
+
+
+/*******************(1) ADD_PRODUCTS **************************/
+
+.vatBox,.unitBox {
+        width: 10%;
+        height: 25px;
+}
+
+#vatField{
+        width: 13%;
+}
+
+/*************** INCREMENT DECREMENT BUTTON -----*/
+
+.qty {
+        width: 6%;
+        height: 25px;
+        text-align: center;
+}
+/*******************(2) ADD_STORE **************************/
+
+
+.addrline1{
+        width: 30%;
+}
+
+.addrline2{
+        width:20%;    
+}
+
+.remarks{
+        height: 50px;
+        width: 30%;
+}
+
+/*******************(3) ADD_USERS **************************/
+.usrType{
+        width: 25%;
+}
