@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+    
+<!******************TOP BOX******************->
+    
+    <div class="topBox row">
+    <div class="headText"> Welcome XXXXXX </div>
+    </div>
+    
+<!******************LEFT BOX******************->   
+    <div class="leftBox row">
+        <ul>
+            <li><a href="#">Add User</a></li>
+            <li><a href="#">View/Edit User</a></li>
+        </ul>
+    </div>
+
+<!******************TOP LINE******************->  
+    <div class="line row">New User</div>
+    
+<!******************BODY DETAILS******************-> 
+
+ <div class="details row">
+     
+    <label>First Name</label>&nbsp;
+            <input class="valueFields" type="text" name="firstName" >
+            <br>
+    <label>Last Name</label>&nbsp;
+            <input class="valueFields" type="text" name="lastName" >
+            <br>
+    <label>Password</label>&nbsp;
+            <input class="valueFields" type="password" name="password" >
+            <br>
+    <label>Confirm Password</label>&nbsp;
+            <input class="valueFields" type="password" name="confirmPassword" >
+            <br>
+    <label>Email</label>&nbsp;
+            <input class="valueFields" type="text" name="email" >
+            <br>
+    <label >User Type</label>&nbsp;
+            <input class="usrType" list="usrType" name="usrType" >
+                <datalist id="usrType">
+                    <option value="Type1">
+                    <option value="Type2">
+                    <option value="Type3">
+                    <option value="Type4">
+                  </datalist>
+            <br>
+</div>
+<!******************LAST BUTTONS (SAVE AND CANCEL)******************->
+    
+    <div class="lastButtons row">
+            <input type='button' value="Save" id="save"/> <tab1></tab1>
+            <input type='button' value="Cancel" id="cancel"/>
+  </div>
+    
+    
+</body>
+</html>

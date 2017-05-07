@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+    
+</head>
+<body>
+    
+<!******************TOP BOX******************->
+    <div class="topBox row">
+    <div class="headText"> Welcome XXXXXX </div>
+    </div>
+
+<!******************LEFT BOX******************->   
+    
+    <div class="leftBox row">
+        <ul>
+          <li><a href="#"> &nbsp;&nbsp;Add Product</a></li>
+          <li><a href="#"> View/Edit Product</a></li>
+        </ul>
+    </div>
+<!******************TOP LINE******************-> 
+    <div class="line row">New Product</div>
+   
+<!******************BODY DETAILS******************-> 
+    <div class="details row">
+
+        <label >Dealer</label>
+            <input class="valueFields" list="dealer" name="dealer">
+                <datalist id="dealer">
+                    <option value="Dealer1">
+                    <option value="Dealer2">
+                    <option value="Dealer3">
+                    <option value="Dealer4">
+                </datalist>&nbsp;&nbsp;
+        <br>
+        <label>Product category</label>
+            <input class="valueFields" list="category" name="category">
+                <datalist id="category">
+                    <option value="Category1">
+                    <option value="Category2">
+                    <option value="Category3">
+                    <option value="Category4">
+                 </datalist>&nbsp;&nbsp;
+        <br>
+        <label>Product Name</label>&nbsp;  
+            <input class="valueFields" type="text" name="productName" ><br>
+        
+       <label class="abcd">Quantity</label>
+            <input type='number' name='quantity' value='0' class='qty' /><tab1></tab1>
+            <input class="unitBox" list="units" name="units" placeholder="Units">
+                <datalist id="units">
+                    <option value="Unit1">
+                    <option value="Unit2">
+                    <option value="Unit3">
+                    <option value="Unit4">
+                </datalist>&nbsp;&nbsp; 
+        <br>
+        <label>Basic Rate</label> 
+            <input type='number' name='quantity' value='0' class='qty' />&nbsp;&nbsp;&nbsp;
+        <label id="vatField">VAT (%)</label>
+            <input  class="vatBox" type="text" name="vat" >
+        <br>
+            
+        <label>Cost</label>&nbsp;
+            <input class="valueFields" type="text" name="cost" >&nbsp;&nbsp;
+        <br>
+        <label>Threshold Quantity</label> 
+            <input type='number' name='quantity' value='0' class='qty' />
+        <br>
+        <label>Status</label>&nbsp;<input class="valueFields" type="text" name="status" ><br>
+    </div>
+<!******************LAST BUTTONS (SAVE AND CANCEL)******************->
+    <div class="lastButtons row">
+            <input type='button' value="Save" id="save"/> <tab1></tab1>
+            <input type='button' value="Cancel" id="cancel"/>
+  </div>
+</body>
+</html>

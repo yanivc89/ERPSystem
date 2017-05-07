@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    
+</head>
+<body>
+    
+ <!******************TOP BOX******************->
+    
+    <div class="topBox row">
+    <div class="headText"> Welcome XXXXXX </div>
+    </div>
+    
+<!******************LEFT BOX******************->   
+    <div class="leftBox row">
+        <ul>
+            <li><a href="#">Generate Bill</a></li>
+            <li><a href="#">View/Edit Bill</a></li>
+        </ul>
+    </div>
+
+<!******************TOP LINE******************->  
+<div class="generateBill">
+    <div class="line row">New Invoice</div>
+    
+    
+    
+<!******************BODY DETAILS******************->  
+
+    <div class="bodyDetails row">
+
+       <div class="topLeft">
+        
+        <label>Barcode</label>&nbsp;
+            <input class="valueFields" type="text" name="barCode" placeholder="scan or type">
+            <br>
+        <label>Product</label>&nbsp;
+            <input class="valueFields" type="text" name="product" >
+            <br>
+        
+        </div>
+        <div  class="topRight">
+        
+        <label>Quantity</label>&nbsp;
+            <input class="valueFields" type="text" name="quantity" >
+            <br>
+        <label>Price</label>&nbsp;
+            <input class="valueFields" type="text" name="price" >
+            <br>
+        
+        </div>
+    </div>
+    
+    <!******************LAST BUTTONS (SAVE AND CANCEL)******************->
+    
+    <div class="lastButtons row">
+            <input type='button' value="Add" id="Add"/> <tab1></tab1>
+            <input type='button' value="Cancel" id="cancel"/>
+  </div>
+    
+    <!******************Data Table******************->
+   
+    
+    <!******************LAST PART******************->
+ <div class="bodyDetails row">
+    <div class="bottomLeft">
+        <label >Payment</label>&nbsp;
+            <input class="valueFields" list="payment" name="payment" placeholder="Cash">
+                <datalist id="payment">
+                    <option value="Cash">
+                    <option value="Card">
+                </datalist>&nbsp;&nbsp;
+
+            <br>
+        <label>Received (&euro;)</label>&nbsp;
+            <input class="valueFields" type="text" name="received" >
+            <br>
+            
+        <label>Balance (&euro;)</label>&nbsp;
+            <input class="valueFields" type="text" name="balance" >
+            <br>
+    </div>
+    <div class="bottomRight">
+        <label>Total (&euro;)</label>&nbsp;
+            <input class="valueFields" type="text" name="total" >
+            <br>
+        <label>VAT (%)</label>&nbsp;
+            <input class="valueFields vatField1" type="text" name="vat1" >&nbsp;&nbsp;<input class="valueFields vatField2" type="text" name="vat2" >
+            <br>
+        <label>Grand Total</label>&nbsp;
+            <input class="valueFields" type="text" name="grandTotal" >
+            <br>
+    </div>
+</div>
+    </div>
+    
+<div class="viewBill">
+    <div class="line row">View Bills</div>
+    
+    
+    
+<!******************BODY DETAILS******************->  
+
+
+    
+    <div class="bodyDetails row">
+
+       <div class="topLeft">
+        
+        <label>Bill No</label>&nbsp;
+            <input class="valueFields" type="text" name="billNo" >
+            <br>
+        <label>Shop</label>&nbsp;
+            <input class="valueFields" type="text" name="shop" >
+            <br>
+        
+        </div>
+        <div  class="topRight">
+        
+        <label>Amount</label>&nbsp;
+            <input class="valueFields" type="text" name="amount" >
+            <br>
+        <label>Bill Date</label>&nbsp;
+            <input class="valueFields" type="date" name="price" ><br>
+            <input class="valueFields" type="date" name="price" style="margin-left:33%;">
+            <br>
+        
+        </div>
+    </div>
+        
+    <div class="lastButtons row buttonsRight">
+            <input type='button' value="Search" id="search"/> <tab1></tab1>
+            <input type='button' value="Reset" id="reset"/>
+  </div>
+  <!******************Data Table******************->
+   
+    <!******************LAST PART******************->
+ <div class="bodyDetails row">
+    
+    <div class="bottom">
+        <label>Total (&euro;)</label>&nbsp;
+            <input class="valueFields" type="text" name="total" >
+            <br>
+        
+    </div>
+</div>
+    
+</div>
+     
+</body>
+</html>

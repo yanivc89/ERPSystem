@@ -1,0 +1,105 @@
+/* ------------------------------------------------------------------------------------ */
+/* BASIC SETUP */
+/* ------------------------------------------------------------------------------------ */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato','Arial',sans-serif; 
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    
+    
+}
+
+.clearfix { zoom:1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+.row {
+    margin: 0 auto; 
+    width: auto;
+}
+
+tab1 { padding-left: 2em; }
+/********************************/
+
+.container{
+    
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(ERP_Main_Screen.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+h1{
+    color:#FFFFFF;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+
+.login{
+     color:#FFFFFF;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 50px;
+    width: auto;
+    
+}
+
+input{
+    height: 40px;
+    width: 17%;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0);
+    border: solid 2px #ffffff;
+    padding-left: 20px;
+    
+}
+
+input::-webkit-input-placeholder {
+    font-size: 20px;
+    color: #ebebeb;
+    padding-left: 20%;
+}
+
+
+#submit {
+    
+    background-color: #FF530D;
+    border: solid 2px #c94109;
+    padding-left:0.3%;
+}
+
+
+#submit:hover {
+    
+    background-color: #c94109;
+    border: solid 2px #c94109;
+    
+}
+
+#submit:active {
+    
+    background-color: #FF530D;
+    border: solid 2px #c94109;
+    
+}

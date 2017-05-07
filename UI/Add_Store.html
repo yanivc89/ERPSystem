@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    
+</head>
+<body>
+    
+ <!******************TOP BOX******************->
+    
+    <div class="topBox row">
+    <div class="headText"> Welcome XXXXXX </div>
+    </div>
+    
+<!******************LEFT BOX******************->   
+    <div class="leftBox row">
+        <ul>
+            <li><a href="#">Add Store</a></li>
+            <li><a href="#">View/Edit Store</a></li>
+        </ul>
+    </div>
+
+<!******************TOP LINE******************->  
+    <div class="line row">New Store</div>
+    
+    
+    
+<!******************BODY DETAILS******************->  
+    
+    <div class="details row">
+
+       <label>Store Name</label>&nbsp;
+            <input class="valueFields" type="text" name="storeName" >
+            <br>
+        <label>Store Address</label>&nbsp;
+            <input class="addrline1" type="text" name="street" placeholder="Street">&nbsp;<input class="addrline1" type="text" name="number" placeholder="Nr.">
+            <br>
+            <tab1></tab1><tab1></tab1><tab1></tab1><tab1></tab1>&nbsp;&nbsp;<input class="addrline2" type="text" name="city" placeholder="City">&nbsp;<input class="addrline2" type="text" name="zip" placeholder="ZIP">&nbsp;<input class="addrline2" list="countries" name="countries" placeholder="Countries">
+                <datalist id="countries">
+                    <option value="Country1">
+                    <option value="Country2">
+                    <option value="Country3">
+                    <option value="Country4">
+                  </datalist>&nbsp;&nbsp;
+            <br>
+        <label>Email</label>&nbsp;
+            <input class="valueFields" type="text" name="email" >
+            <br>
+        <label>Telephone</label>&nbsp;
+            <input class="valueFields" type="text" name="telephone" >
+            <br>
+        <label>Store Manager</label>&nbsp;
+            <input class="valueFields" type="text" name="storeManager" >
+            <br>
+        <label>Remarks</label>&nbsp;
+            <textarea class="remarks" name='remarks' id='remarks'></textarea> 
+            <br>
+    </div>
+    
+    <!******************LAST BUTTONS (SAVE AND CANCEL)******************->
+    
+    <div class="lastButtons row">
+            <input type='button' value="Save" id="save"/> <tab1></tab1>
+            <input type='button' value="Cancel" id="cancel"/>
+  </div>
+    
+    
+    
+ 
+</body>
+</html>
