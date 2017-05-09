@@ -139,8 +139,8 @@ public class MyshopDaoImpl{
 		NamedParameterJdbcTemplate namedJdbcTemplate = getNamedJdbcTemplate();	
 	
 
-		String sql = "INSERT INTO DEALERS(COMPANY_NAME,COMPANY_NUMBER,ADDRESS,EMAIL,PHONE,CP1_NAME,CP1_PHONE,CP2_NAME,CP2_PHONE,REMARKS,MODIFIED_DATE) "
-				+ "VALUES( :companyName,:companyNumber,:address,:phone,:email,:cp1Name,:cp1Phone,:cp2Name,:cp2Phone,:remarks,:createdDate )";
+		String sql = "INSERT INTO DEALERS(COMPANY_NAME,COMPANY_NUMBER,ADDRESS,CITY,COUNTRY,ZIPCODE,EMAIL,PHONE,CP1_NAME,CP1_PHONE,CP2_NAME,CP2_PHONE,REMARKS,MODIFIED_DATE) "
+				+ "VALUES( :companyName,:companyNumber,:address,:city,:country,:zipCode,:phone,:email,:cp1Name,:cp1Phone,:cp2Name,:cp2Phone,:remarks,:createdDate )";
 
 		Map<String, String> queryMap = new HashMap<String, String>();
 
@@ -148,6 +148,9 @@ public class MyshopDaoImpl{
 		queryMap.put("companyName", dealers.getCompanyName());
 		queryMap.put("companyNumber", dealers.getCompanyNumber());
 		queryMap.put("address", dealers.getAddress());
+		queryMap.put("city", dealers.getCity());
+		queryMap.put("country", dealers.getCountry());
+		queryMap.put("zipCode", dealers.getZipCode());
 		queryMap.put("phone", dealers.getPhone());
 		queryMap.put("email", dealers.getEmail());
 		queryMap.put("cp1Name", dealers.getCp1Name());
@@ -172,7 +175,8 @@ public class MyshopDaoImpl{
 	
 
 		String sql = "UPDATE DEALERS SET COMPANY_NAME = :companyName,COMPANY_NUMBER = :companyNumber,"
-				+ "ADDRESS = :address,EMAIL =:email,PHONE =:phone,CP1_NAME =:cp1Name,CP1_PHONE =:cp1Phone,"
+				+ "ADDRESS = :address,CITY = :city, COUNTY = :country, ZIPCODE = :zipCode, EMAIL =:email,"
+				+ "PHONE =:phone,CP1_NAME =:cp1Name,CP1_PHONE =:cp1Phone,"
 				+ "CP2_NAME =:cp2Name,CP2_PHONE =:cp2Phone,REMARKS = :remarks,MODIFIED_DATE = :modifiedDate"
 				+ " WHERE COMPANY_ID = :companyId";
 				
@@ -181,6 +185,9 @@ public class MyshopDaoImpl{
 		queryMap.put("companyName", dealers.getCompanyName());
 		queryMap.put("companyNumber", dealers.getCompanyNumber());
 		queryMap.put("address", dealers.getAddress());
+		queryMap.put("city", dealers.getCity());
+		queryMap.put("country", dealers.getCountry());
+		queryMap.put("zipCode", dealers.getZipCode());
 		queryMap.put("phone", dealers.getPhone());
 		queryMap.put("email", dealers.getEmail());
 		queryMap.put("cp1Name", dealers.getCp1Name());
@@ -197,8 +204,44 @@ public class MyshopDaoImpl{
 
 	}
 
-	public void searchDealer( String earlyCompanyNumber, String companyName, String companyNumber) {
+	public void searchDealer( Dealers dealers) {
 
+		NamedParameterJdbcTemplate namedJdbcTemplate = getNamedJdbcTemplate();
+		
+		int i = 0;
+		
+		StringBuilder sql = new StringBuilder("SELECT * FROM DEALERS WHERE ");
+		
+		if( dealers.getCompanyName() != null && !dealers.getCompanyName().equals("") ){
+			sql.append("COMPANY_NAME LIKE '" + dealers.getCompanyName() + "'");
+			i++;
+		}
+		
+		if( dealers.getCompanyNumber() != null && !dealers.getCompanyNumber().equals("") ){
+			if( i > 0 ) sql.append(" AND ");
+			sql.append("COMPANY_NUMBER LIKE '" + dealers.getCompanyNumber() + "'");
+			i++;
+		}
+		
+		if( dealers.getCity() != null && !dealers.getCity().equals("") ){
+			if( i > 0 ) sql.append(" AND ");
+			sql.append("CITY LIKE '" + dealers.getCity() + "'");
+			i++;
+		}
+		
+		if( dealers.getCountry() != null && !dealers.getCountry().equals("") ){
+			if( i > 0 ) sql.append(" AND ");
+			sql.append("COUNTRY LIKE '" + dealers.getCountry() + "'");
+			i++;
+		}
+		
+		if( dealers.getZipCode() != null && !dealers.getZipCode().equals("") ){
+			if( i > 0 ) sql.append(" AND ");
+			sql.append("ZIPCODE LIKE '" + dealers.getZipCode() + "'");
+			i++;
+		}
+		
+		
 		
 
 	}
