@@ -6,6 +6,9 @@ public class Dealers {
 	private String companyName;
 	private String companyNumber;
 	private String address;
+	private String city;
+	private String country;
+	private String zipCode;
 	private String phone;
 	private String email;
 	private String cp1Name;
@@ -13,7 +16,7 @@ public class Dealers {
 	private String cp2Name;
 	private String cp2Phone;
 	private String remarks;
-	private String createdDate;
+	private String modifiedDate;
 	
 	
 	public Long getCompanyId() {
@@ -49,11 +52,30 @@ public class Dealers {
 	public String getRemarks() {
 		return remarks;
 	}
-	public String getCreatedDate() {
-		return createdDate;
+	public String getModifiedDate() {
+		return modifiedDate;
 	}
-	public void setCreatedDate(String createdDate) {
-		this.createdDate = createdDate;
+	
+	public String getCity() {
+		return city;
+	}
+	public String getCountry() {
+		return country;
+	}
+	public String getZipCode() {
+		return zipCode;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public void setCountry(String country) {
+		this.country = country;
+	}
+	public void setZipCode(String zipCode) {
+		this.zipCode = zipCode;
+	}
+	public void setModifiedDate(String modifiedDate) {
+		this.modifiedDate = modifiedDate;
 	}
 	public void setCompanyId(Long companyId) {
 		this.companyId = companyId;

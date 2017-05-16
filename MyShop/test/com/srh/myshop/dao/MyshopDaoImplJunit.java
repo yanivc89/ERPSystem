@@ -2,14 +2,15 @@ package com.srh.myshop.dao;
 
 import org.junit.Test;
 
-import com.srh.myshop.model.Dealers;
-import com.srh.myshop.model.Products;
+import com.srh.myshop.model.UserLogin;
+import com.srh.myshop.model.Users;
 
 import junit.framework.TestCase;
 
 public class MyshopDaoImplJunit extends TestCase{
 	
-	@Test
+	
+	/*@Test
 	public void testInsertDealers(){
 		
 		Dealers dealers = new Dealers();
@@ -81,5 +82,51 @@ public class MyshopDaoImplJunit extends TestCase{
 		
 	}
 }
+	*/
+
+	
+	@Test
+	public void insertHashedPwd(){
+		
+		Users users = new Users();
+		
+		DaoImpl impl = new DaoImpl();
+		
+		users.setUserId(1L);
+		users.setFirstName("Anusha");
+		users.setLastName("Nagaraj");
+		users.setAddress("address1");
+		users.setEmail("anusha@gmail.com");
+		users.setTelephone("123645");
+		users.setUserType("Purchase manager");
+		users.setUserName("anushanagaraj");
+		users.setPassword("test");
+		
+		
+		impl.insertUsers(users);	
+		
+		System.out.println("Inserted Users");
+	}
+	
+	/*@Test
+	public void testInsertUsersLogin(){
+		
+		UserLogin userlogin= new UserLogin();
+		
+		DaoImpl impl = new DaoImpl();
+		
+		userlogin.setUserId(1L);
+		userlogin.setUserName("Anusha");
+		userlogin.setPassword("test");
+		
+		
+		impl.insertUsersLogin(userlogin);	
+		
+		System.out.println("Inserted UsersLogin");
+	}
+	*/
+
 	
 
+	
+}
