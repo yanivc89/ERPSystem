@@ -4,5 +4,10 @@ MyShop/build/*
 MyShop/.settings
 MyShop/.classpath
 MyShop/.project
+<<<<<<< HEAD
 .recommenders
 MyShop/WebContent/WEB-INF/applicationContext.xml
+=======
+MyShop/WebContent/WEB-INF/*
+.recommenders
+>>>>>>> 134834a7e775e4e2afabb5fcfaf7f84c165c5cdd

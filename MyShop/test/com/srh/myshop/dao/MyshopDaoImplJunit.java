@@ -58,6 +58,31 @@ public class MyshopDaoImplJunit extends TestCase{
 		
 		
 	}
+	
+	@Test
+	public void testInsertProducts(){
+		Products prod = new Products();
+		
+		ProductsDaoImpl impl = new ProductsDaoImpl();
+		prod.setProductCode(1001);
+		prod.setCompanyId(1);
+		prod.setProductCategoryId(1);
+		prod.setBrandName("SRH");
+		prod.setProductName("Test");
+		prod.setProductQty("100g");
+		prod.setBasicRate(10.50);
+		prod.setTax(12.50);
+		prod.setSellingRate(15.00);
+		prod.setMinOrderQty(20);
+		prod.setThresholdQty(5);
+		prod.setProductStatus("Available");
+		prod.setStatus("A");
+		impl.insertNewProducts(prod);
+		
+		System.out.println("Inserted Product");
+		
+	}
+}
 	*/
 
 	
