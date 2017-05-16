@@ -5,3 +5,4 @@ MyShop/.settings
 MyShop/.classpath
 MyShop/.project
 .recommenders
+MyShop/WebContent/WEB-INF/applicationContext.xml

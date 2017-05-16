@@ -5,7 +5,7 @@ import com.srh.myshop.model.Users;
 
 public class serviceImpl {
 
-		public String insertHashedPwd( Users users ) throws Exception {
+		public String insertHashedPwd( Users users ){
 
 			DaoImpl daoImpl = new DaoImpl();
 
@@ -21,14 +21,14 @@ public class serviceImpl {
 
 				String hashed = BCrypt.hashpw(users.getPassword(), salt);
 				users.setPassword(hashed);
-				
-				daoImpl.insertUsersLogin(users.getUserId()+1, users.getUserName(), users.getPassword());
+				System.out.println(hashed);
+				//System.out.println("users:"+users.getUserId()+users.getFirstName()+users.getLastName()+users.getPassword());
 				daoImpl.insertUsers(users);
+				daoImpl.insertUsersLogin(users.getUserId(), users.getUserName(), users.getPassword());
+
 			}
 
 			return "User successfully added";
-
-
 
 		}
 

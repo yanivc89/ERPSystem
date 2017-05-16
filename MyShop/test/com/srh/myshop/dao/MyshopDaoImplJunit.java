@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import com.srh.myshop.model.UserLogin;
 import com.srh.myshop.model.Users;
+import com.srh.myshop.service.serviceImpl;
 
 import junit.framework.TestCase;
 
@@ -60,8 +61,8 @@ public class MyshopDaoImplJunit extends TestCase{
 	*/
 
 	
-	@Test
-	public void insertHashedPwd(){
+	/*@Test
+	public void testInsertHashedPwd(){
 		
 		Users users = new Users();
 		
@@ -81,7 +82,7 @@ public class MyshopDaoImplJunit extends TestCase{
 		impl.insertUsers(users);	
 		
 		System.out.println("Inserted Users");
-	}
+	}*/
 	
 	/*@Test
 	public void testInsertUsersLogin(){
@@ -101,7 +102,28 @@ public class MyshopDaoImplJunit extends TestCase{
 	}
 	*/
 
-	
+	@Test
+	public void testInsertHashedPwd(){
+		
+		Users users = new Users();
+		
+		serviceImpl impl = new serviceImpl();
+		
+		users.setUserId(1l);
+		users.setFirstName("Anusha");
+		users.setLastName("Nagaraj");
+		users.setAddress("address1");
+		users.setEmail("anusha@gmail.com");
+		users.setTelephone("123645");
+		users.setUserType("Purchase manager");
+		users.setUserName("anushanagaraj");
+		users.setPassword("test");
+		
+		
+		String print= impl.insertHashedPwd(users);	
+		
+		System.out.println(print);
+	}
 
 	
 }
