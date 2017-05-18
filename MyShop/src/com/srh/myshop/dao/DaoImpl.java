@@ -37,7 +37,7 @@ public class DaoImpl {
 	public boolean checkUserExist(String userName){
 		NamedParameterJdbcTemplate namedJdbcTemplate = getNamedJdbcTemplate();
 		
-		String sql = "SELECT COUNT(*) FROM ERP_TBL_USERS WHERE USER_NAME=:userName";
+		String sql = "SELECT COUNT(*) FROM ERP_TBL_USERS WHERE FIRST_NAME=:userName";
 
 		Map<String, String> queryMap = new HashMap<String, String>();
 		
