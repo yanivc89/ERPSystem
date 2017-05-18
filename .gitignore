@@ -1,8 +1,8 @@
-
+.metadata
 RemoteSystemsTempFiles
 MyShop/build/*
 MyShop/.settings
 MyShop/.classpath
 MyShop/.project
 .recommenders
-*.xml
+MyShop/WebContent/WEB-INF/*.xml
